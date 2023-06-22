@@ -18,9 +18,10 @@ void bubbleSort(int arr[], int size) {
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int size = sizeof(arr) / sizeof(arr[0]);
+    int i=0;
     
     printf("Array before sorting:\n");
-    for (int i = 0; i < size; i++) {
+    for (i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");
@@ -28,7 +29,7 @@ int main() {
     bubbleSort(arr, size);
 
     printf("Array after sorting in ascending order:\n");
-    for (int i = 0; i < size; i++) {
+    for (i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");

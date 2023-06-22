@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void decimalToBinary(int decimal) {
+	int i=0;
     int binary[32];
     int index = 0;
 
@@ -11,7 +12,7 @@ void decimalToBinary(int decimal) {
     }
 
     printf("Binary: ");
-    for (int i = index - 1; i >= 0; i--) {
+    for (i = index - 1; i >= 0; i--) {
         printf("%d", binary[i]);
     }
     printf("\n");
@@ -26,9 +27,10 @@ void decimalToOctal(int decimal) {
         decimal = decimal / 8;
         index++;
     }
+    int i=0;
 
     printf("Octal: ");
-    for (int i = index - 1; i >= 0; i--) {
+    for (i = index - 1; i >= 0; i--) {
         printf("%d", octal[i]);
     }
     printf("\n");
@@ -48,9 +50,10 @@ void decimalToHexadecimal(int decimal) {
         decimal = decimal / 16;
         index++;
     }
+    int i=0;
 
     printf("Hexadecimal: ");
-    for (int i = index - 1; i >= 0; i--) {
+    for (i = index - 1; i >= 0; i--) {
         printf("%c", hexadecimal[i]);
     }
     printf("\n");

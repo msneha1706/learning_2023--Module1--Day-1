@@ -2,7 +2,8 @@
 
 void swapAlternateElements(int arr[], int size)
 {
-    for (int i = 0; i < size - 1; i += 2)
+	int i=0;
+    for (i = 0; i < size - 1; i += 2)
     {
         int temp = arr[i];
         arr[i] = arr[i + 2];
@@ -12,8 +13,9 @@ void swapAlternateElements(int arr[], int size)
 
 void printArray(int arr[], int size)
 {
+	int i=0;
     printf("[");
-    for (int i = 0; i < size; i++)
+    for (i = 0; i < size; i++)
     {
         printf("%d", arr[i]);
         if (i != size - 1)

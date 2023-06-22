@@ -29,7 +29,8 @@ int main() {
 
     printf("Decimal: %u\n", decimal);
     printf("BCD: ");
-    for (int i = 0; i < sizeof(bcd); i++) {
+    int i=0;
+    for (i = 0; i < sizeof(bcd); i++) {
         printf("%u", bcd[i]);
     }
     printf("\n");

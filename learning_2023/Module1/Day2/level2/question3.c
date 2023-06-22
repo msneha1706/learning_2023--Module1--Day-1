@@ -2,8 +2,10 @@
 #include <string.h>
 
 void sortNames(char *names[], int size) {
-    for (int i = 0; i < size - 1; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
+	int i=0;
+    for (i = 0; i < size - 1; i++) {
+    	int j=0;
+        for (j = 0; j < size - i - 1; j++) {
             if (strcmp(names[j], names[j + 1]) > 0) {
                 // Swap names[j] and names[j + 1]
                 char *temp = names[j];
@@ -15,7 +17,8 @@ void sortNames(char *names[], int size) {
 }
 
 void printNames(char *names[], int size) {
-    for (int i = 0; i < size; i++) {
+	int i=0;
+    for (i = 0; i < size; i++) {
         printf("%s\n", names[i]);
     }
 }

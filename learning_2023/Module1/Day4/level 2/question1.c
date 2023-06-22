@@ -3,6 +3,7 @@
 void decimalToBinary(unsigned int decimal) {
     unsigned int binary[32];
     int i = 0;
+    int j=0;
 
     while (decimal > 0) {
         binary[i] = decimal % 2;
@@ -14,7 +15,7 @@ void decimalToBinary(unsigned int decimal) {
     if (i == 0) {
         printf("0");
     } else {
-        for (int j = i - 1; j >= 0; j--) {
+        for (j = i - 1; j >= 0; j--) {
             printf("%u", binary[j]);
         }
     }
@@ -30,12 +31,12 @@ void decimalToOctal(unsigned int decimal) {
         decimal = decimal / 8;
         i++;
     }
-
+	int j=0;
     printf("Octal: ");
     if (i == 0) {
         printf("0");
     } else {
-        for (int j = i - 1; j >= 0; j--) {
+        for (j = i - 1; j >= 0; j--) {
             printf("%u", octal[j]);
         }
     }
@@ -56,12 +57,13 @@ void decimalToHexadecimal(unsigned int decimal) {
         decimal = decimal / 16;
         i++;
     }
-
+	
+	int j=0;
     printf("Hexadecimal: ");
     if (i == 0) {
         printf("0");
     } else {
-        for (int j = i - 1; j >= 0; j--) {
+        for (j = i - 1; j >= 0; j--) {
             printf("%c", hexadecimal[j]);
         }
     }

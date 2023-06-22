@@ -5,21 +5,22 @@
 
 int compareBoxes(int box1[], int box2[]) {
     int count[BOX_SIZE + 1] = {0}; 
+    int i=0;
     
   
-    for (int i = 0; i < BOX_SIZE; i++) {
+    for (i = 0; i < BOX_SIZE; i++) {
         count[box1[i]]++;
     }
     
    
-    for (int i = 0; i < BOX_SIZE; i++) {
+    for (i = 0; i < BOX_SIZE; i++) {
         if (count[box2[i]] == 0) {
             return 0; 
         }
         count[box2[i]]--;
     }
  
-    for (int i = 1; i <= BOX_SIZE; i++) {
+    for (i = 1; i <= BOX_SIZE; i++) {
         if (count[i] != 0) {
             return 0; 
         }
